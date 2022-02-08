@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  height: 100vh;
+  background-color: #282d35;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #21222A;
+  padding: 30px 25px;
+  height: 90px;
+}
+
+.logo-name {
+  color:#61dafb;
+  margin: 0;
+  margin-right: auto;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.logo {
+  width: 60px;
+}
+
+.course {
+  color:cornsilk;
+}
+
+main {
+  padding: 57px 27px;
   color: white;
+  background-image: url("./logo.svg");
+  background-repeat: no-repeat;
+  background-position: right 20%;
+
 }
 
-.App-link {
+.main-heading {
+  margin: 0;
+  font-size: 39px;
+}
+
+.list {
+  margin-top: 46px;
+}
+
+.list > li {
+  padding-block: 10px;
+}
+
+.list > li::marker {
+  padding-block: 10px;
+  font-size: 1.4rem;
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
